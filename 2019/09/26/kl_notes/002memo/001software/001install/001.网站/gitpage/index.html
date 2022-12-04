@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>gitpage | ⍟曾经走过👣</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">gitpage</h1><a id="logo" href="/.">⍟曾经走过👣</a><p class="description">kevinluo</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/search/"><i class="fa fa-search"> 搜索</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">gitpage</h1><div class="post-meta">Sep 26, 2019<span> | </span><span class="category"><a href="/categories/001-网站/">001.网站</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.7k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-hourglass-half"></i><span class="post-count"> 8</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#gitpages"><span class="toc-number">1.</span> <span class="toc-text">gitpages</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#travis-ci-kevinluolog"><span class="toc-number">1.1.</span> <span class="toc-text">Travis Ci-kevinluolog</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#travis-ci-repo-关系"><span class="toc-number">1.1.1.</span> <span class="toc-text">travis ci repo 关系</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#kevinluologkdoc.git-push触发"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">kevinluolog/kdoc.git push触发</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#触发仓输出仓关系"><span class="toc-number">1.1.1.1.1.</span> <span class="toc-text">触发仓/输出仓关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#完成功能"><span class="toc-number">1.1.1.1.2.</span> <span class="toc-text">完成功能：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#rst-转成-.html"><span class="toc-number">1.1.1.1.2.1.</span> <span class="toc-text">.rst 转成 .html;</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#rst-转成-hexo输入的-.md添加frontmatter信息如tagcategory"><span class="toc-number">1.1.1.1.2.2.</span> <span class="toc-text">.rst 转成 hexo输入的 .md;(添加frontmatter信息，如tag,category)</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#输出output目录结构"><span class="toc-number">1.1.1.1.3.</span> <span class="toc-text">输出output目录结构</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#kevinluologhexo-klblog-src.git-push触发"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">kevinluolog/hexo-klblog-src.git push触发</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#触发仓输出仓关系-1"><span class="toc-number">1.1.1.2.1.</span> <span class="toc-text">触发仓/输出仓关系</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#完成功能-1"><span class="toc-number">1.1.1.2.2.</span> <span class="toc-text">完成功能：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#错误时间.md-转成-正确时间.md"><span class="toc-number">1.1.1.2.2.1.</span> <span class="toc-text">错误时间.md 转成 正确时间.md</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#正确时间.md-转成-网站.html"><span class="toc-number">1.1.1.2.2.2.</span> <span class="toc-text">正确时间.md 转成 网站.html;</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#网站生成工作步骤"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">网站生成工作步骤:</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#目标写好即完成"><span class="toc-number">1.1.1.3.1.</span> <span class="toc-text">目标：写好即完成</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#数据流路径windown本地"><span class="toc-number">1.1.1.3.2.</span> <span class="toc-text">数据流路径(windown本地):</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#数据流路径travis-全自动"><span class="toc-number">1.1.1.3.3.</span> <span class="toc-text">数据流路径(travis 全自动):</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div></div><div class="post-content"><h1 id="gitpages">gitpages</h1>
+<div class="contents">
+<p>contents</p>
+</div>
+<div class="section-numbering">
+
+</div>
+<h2 id="travis-ci-kevinluolog">Travis Ci-kevinluolog</h2>
+<h3 id="travis-ci-repo-关系">travis ci repo 关系</h3>
+<p>序号 <a href="mailto:触发仓@分支" target="_blank" rel="noopener">触发仓@分支</a> <a href="mailto:源仓@分支" target="_blank" rel="noopener">源仓@分支</a> <a href="mailto:输出仓@分支" target="_blank" rel="noopener">输出仓@分支</a></p>
+<h4 id="kevinluologkdoc.git-push触发">kevinluolog/kdoc.git push触发</h4>
+<h5 id="触发仓输出仓关系">触发仓/输出仓关系</h5>
+<table style="width:99%;">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 29%">
+<col style="width: 44%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><a href="mailto:触发仓@分支" target="_blank" rel="noopener">触发仓@分支</a></th>
+<th><a href="mailto:源仓@分支" target="_blank" rel="noopener">源仓@分支</a></th>
+<th><a href="mailto:输出仓@分支" target="_blank" rel="noopener">输出仓@分支</a></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:travisci_out_kdoc@output" target="_blank" rel="noopener">travisci_out_kdoc@output</a></td>
+</tr>
+<tr class="even">
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:hexo-klblog-src@x5个分支" target="_blank" rel="noopener">hexo-klblog-src@x5个分支</a></td>
+</tr>
+<tr class="odd">
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:tran002memo@master" target="_blank" rel="noopener">tran002memo@master</a></td>
+<td><a href="mailto:travisci_out_kdoc@tran002memo" target="_blank" rel="noopener">travisci_out_kdoc@tran002memo</a></td>
+</tr>
+<tr class="even">
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:tran003post@master" target="_blank" rel="noopener">tran003post@master</a></td>
+<td><a href="mailto:travisci_out_kdoc@tran003post" target="_blank" rel="noopener">travisci_out_kdoc@tran003post</a></td>
+</tr>
+<tr class="odd">
+<td><a href="mailto:kdoc@dev" target="_blank" rel="noopener">kdoc@dev</a></td>
+<td><a href="mailto:tran004book@master" target="_blank" rel="noopener">tran004book@master</a></td>
+<td><a href="mailto:travisci_out_kdoc@tran004book" target="_blank" rel="noopener">travisci_out_kdoc@tran004book</a></td>
+</tr>
+<tr class="even">
+<td><a href="mailto:tran005work@xxx" target="_blank" rel="noopener">tran005work@xxx</a></td>
+<td>~</td>
+<td><a href="mailto:travisci_out_005work@xxx" target="_blank" rel="noopener">travisci_out_005work@xxx</a></td>
+</tr>
+<tr class="odd">
+<td><a href="mailto:tran006tmp@xxx" target="_blank" rel="noopener">tran006tmp@xxx</a></td>
+<td>~ pdf html slide</td>
+<td><a href="mailto:travisci_out_006tmp@xxx" target="_blank" rel="noopener">travisci_out_006tmp@xxx</a></td>
+</tr>
+</tbody>
+</table>
+<p>xxx表示：dev=all pdf=pdf html=html slide=slide</p>
+<h5 id="完成功能">完成功能：</h5>
+<p>代码参考 根目录travis.yml</p>
+<h6 id="rst-转成-.html">.rst 转成 .html;</h6>
+<ul>
+<li><p>用sphinx生成：</p>
+<pre><code>sphinx-build -b html $TRAVIS_BUILD_DIR/003work/006tmp $TRAVIS_BUILD_DIR/output/sphinx/build-post</code></pre>
+<pre><code>.html输出到本地output目录： `/output/sphinx/build-memo/*` 
+.html输出到本地output目录： `/output/sphinx/build-post/*` </code></pre></li>
+<li><p>用git deploy：</p>
+<pre><code>git add -A; 
+git commit --allow-empty -m &quot;&quot;
+git push</code></pre>
+<pre><code>输出到=&gt;repo0: `github.com/kevinluolog/travisci_out_kdoc@dev`
+002memo=&gt;deploy到WWWrepo3: `github.com/kevinluolog/gp-memo@gh-pages`
+006tmp=&gt;deploy到WWWrepo4: `github.com/kevinluolog/gp-post@gh-pages`</code></pre></li>
+</ul>
+<p class="heading" id="kdoc发布-网站地址">kdoc发布 网站地址：</p>
+<ol type="1">
+<li><a href="http://kevinluolog.github.io/gp-memo" target="_blank" rel="noopener">kevinluolog.github.io gp-memo 002memo</a></li>
+<li><a href="http://kevinluolog.github.io/gp-memo" target="_blank" rel="noopener">kevinluolog.github.io gp-post 002post</a></li>
+</ol>
+<h6 id="rst-转成-hexo输入的-.md添加frontmatter信息如tagcategory">.rst 转成 hexo输入的 .md;(添加frontmatter信息，如tag,category)</h6>
+<ul>
+<li><p>用makefile + pandoc生成：</p>
+<p>详细参考 <span class="title-ref">kdoc/003work/000tools/002makefiles/001pandoc/linux/Makefile</span></p>
+<pre><code>make startconv -f $TRAVIS_BUILD_DIR/003work/000tools/002makefiles/001pandoc/linux/Makefile DIR_BASE_SRC=$TRAVIS_BUILD_DIR/003work/006tmp DIR_BASE_OBJ=$TRAVIS_BUILD_DIR/output/pandoc/hexomd/006tmp DIR_BASE_COPYTO= SUFFIX_FROM=.rst SUFFIX_TO=.md DIR_TEMPLATE=$T_DIR_TEMPLATE ADD_HEXO_TAG_FROM_DIR=post+ CTL_TOC=TRUE
+
+<p>make startconv -f $TRAVIS_BUILD_DIR/003work/000tools/002makefiles/001pandoc/linux/Makefile DIR_BASE_SRC=$TRAVIS_BUILD_DIR/003work/006tmp DIR_BASE_OBJ=$TRAVIS_BUILD_DIR/output/pandoc/html/006tmp DIR_BASE_COPYTO= SUFFIX_FROM=.rst SUFFIX_TO=.html DIR_TEMPLATE=$T_DIR_TEMPLATE ADD_HEXO_TAG_FROM_DIR=</p></code></pre><p></p>
+<pre><code>.md输出到本地output目录： `/output/pandoc/hexomd/002memo/*` 
+.md输出到本地output目录： `/output/pandoc/hexomd/006tmp/*` </code></pre></li>
+<li><p>用git deploy：</p>
+<pre><code>git add -A; 
+git commit --allow-empty -m &quot;&quot;
+git push</code></pre>
+<pre><code>输出到=&gt;repo1: `github.com/kevinluolog/travisci_out_kdoc@dev`
+002memo=&gt;deploy到repo2-(@b1:b5): `hexo-klblog-src/source/_posts/kl_notes/   002memo@xxx`
+006tmp=&gt;deploy到repo2-(@b1-b5): `hexo-klblog-src/source/_posts/kl_notes/   002memo@xxx`
+xxx:分支 = 
+     master
+     hexo-next-Gemini :注意大写，linux下大小写敏感
+     hexo-next-muse
+     hexo-next-Pisces :注意大写，linux下大小写敏感
+     hexo-maup</code></pre>
+<p>deploy到rep:kevinluolog/hexo-klblog-src.git后，各分支会继续触发travis CI，把各分支上的hexo源码，编译成网站并deploy到对应的WWWrepoXXX的github分支(以repo2（kevinluolog/hexo-klblog-src.git）的分支名字命名)-分别对应repo2-(b1:b5)，和主网站repo。 详细参考 <a href="#kevinluologhexo-klblog-src.git-push触发">kevinluolog/hexo-klblog-src.git push触发</a></p></li>
+</ul>
+<h5 id="输出output目录结构">输出output目录结构</h5>
+<pre><code>.html：由sphinx产生
+/output/sphinx/build-memo/*
+/output/sphinx/build-post/*
+
+<p>.md hexo：由Makefile 产生, pandoc.exe<br>makefile位于/kdoc/003work/000tools/002makefiles/001pandoc/linux/<br>/output/pandoc/hexomd/002memo<br>/output/pandoc/hexomd/006tmp</p></code></pre><p></p>
+<p>hexo源码仓库中的_posts来源，是上面output目录中的pandoc/hexomd目录中的002memo和006tmp. 先clone下来，用rm删除002meo和006tmp,再用cp从hexomd中copy过来。</p>
+<h4 id="kevinluologhexo-klblog-src.git-push触发">kevinluolog/hexo-klblog-src.git push触发</h4>
+<p>代码参考 根目录travis.yml</p>
+<h5 id="触发仓输出仓关系-1">触发仓/输出仓关系</h5>
+<p>~：表示和前面的 <a href="mailto:触发仓@分支" target="_blank" rel="noopener">触发仓@分支</a> 一样</p>
+<div class="line-block">master<br>
+hexo-next-Gemini :注意大写，linux下大小写敏感<br>
+hexo-next-muse<br>
+hexo-next-Pisces :注意大写，linux下大小写敏感<br>
+hexo-maup</div>
+<table>
+<colgroup>
+<col style="width: 8%">
+<col style="width: 41%">
+<col style="width: 14%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>序号</th>
+<th><a href="mailto:触发仓@分支" target="_blank" rel="noopener">触发仓@分支</a></th>
+<th><a href="mailto:源仓@分支" target="_blank" rel="noopener">源仓@分支</a></th>
+<th><a href="mailto:输出仓@分支" target="_blank" rel="noopener">输出仓@分支</a> gitpage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>01</td>
+<td><a href="mailto:hexo-klblog-src@master" target="_blank" rel="noopener">hexo-klblog-src@master</a></td>
+<td>~</td>
+<td><a href="mailto:kevinluolog.github.io@master" target="_blank" rel="noopener">kevinluolog.github.io@master</a></td>
+</tr>
+<tr class="even">
+<td>02</td>
+<td><a href="mailto:hexo-klblog-src@hexo-next-Gemini" target="_blank" rel="noopener">hexo-klblog-src@hexo-next-Gemini</a></td>
+<td>~</td>
+<td><a href="mailto:hexo-next-gemini@gh-pages" target="_blank" rel="noopener">hexo-next-gemini@gh-pages</a></td>
+</tr>
+<tr class="odd">
+<td>03</td>
+<td><a href="mailto:hexo-klblog-src@hexo-next-muse" target="_blank" rel="noopener">hexo-klblog-src@hexo-next-muse</a></td>
+<td>~</td>
+<td><a href="mailto:hexo-next-muse@gh-pages" target="_blank" rel="noopener">hexo-next-muse@gh-pages</a></td>
+</tr>
+<tr class="even">
+<td>04</td>
+<td><a href="mailto:hexo-klblog-src@hexo-next-Pisces" target="_blank" rel="noopener">hexo-klblog-src@hexo-next-Pisces</a></td>
+<td>~</td>
+<td><a href="mailto:hexo-next-Pisces@gh-pages" target="_blank" rel="noopener">hexo-next-Pisces@gh-pages</a></td>
+</tr>
+<tr class="odd">
+<td>05</td>
+<td><a href="mailto:hexo-klblog-src@hexo-maup" target="_blank" rel="noopener">hexo-klblog-src@hexo-maup</a></td>
+<td>~</td>
+<td><a href="mailto:hexo-maup@gh-pages" target="_blank" rel="noopener">hexo-maup@gh-pages</a></td>
+</tr>
+</tbody>
+</table>
+<h5 id="完成功能-1">完成功能：</h5>
+<p>代码参考 根目录travis.yml</p>
+<h6 id="错误时间.md-转成-正确时间.md">错误时间.md 转成 正确时间.md</h6>
+<p>详细代码参见 <span class="title-ref">/MakefileLinuxkblog.mk /travis.yml</span></p>
+<p>影响网站文章时间排序。最终实现正确排序，同时还需要hexo的渲染前的hook配合,把date时间，改成文件的修改时间。</p>
+<p>时间传递路径为， 渲染用的文件创建日期post.date &lt;3= post.updated &lt;2= 文件的mtime &lt;1= 文件的首次commit时间。</p>
+<p>第&lt;1=次转换 详细代码参见 <span class="title-ref">/MakefileLinuxkblog.mk /travis.yml</span> 利用 <span class="title-ref">git log --date=iso --format="%ad" -- ""</span> 获取历史commit时间数据, <span class="title-ref">tail -1</span> 获取首次commit时间， <span class="title-ref">touch -c -data "" -m</span> 设置mtime</p>
+<p>第&lt;2=次转换 hexo编译渲染时自己读取文件时间产生，尚不知在什么module里做的。</p>
+<p>第&lt;3=次转换 详细代码参见 <span class="title-ref">/klBlog/themes/next/scripts/filters/kl-touch-file-time.js</span> 利用 hexo钩子before_post_render 替换。</p>
+<ul>
+<li><p>用makefile + shell脚本 + git命令生成：</p>
+<p>详细代码参考 <span class="title-ref">/MakefileLinuxkblog.mk</span></p>
+<p>makefile</p>
+<pre><code>make touch1 -f MakefileLinuxkblog.mk DIR_BASE_SRC=$TRAVIS_BUILD_DIR/source/_posts</code></pre>
+<p>或纯脚本,单行即可。</p>
+<pre><code>git ls-files -z --eol | sed -e &quot;s/i\\/lf[ \\t]*w\\/lf[ \\t]*attr\\/[ \\t]*/\\n/g&quot; | while read filename; do git log --date=iso --format=&quot;%ad&quot; -- &quot;$TRAVIS_BUILD_DIR/source/_posts/$filename&quot; | tail -1 | xargs -I{} touch -c $filename --date=&quot;{}&quot; -m; done</code></pre></li>
+</ul>
+<h6 id="正确时间.md-转成-网站.html">正确时间.md 转成 网站.html;</h6>
+<p>详细代码参考 <span class="title-ref">/travis.yml /_config.yml</span></p>
+<p>deploy到rep:kevinluolog/hexo-klblog-src.git后，各分支会继续触发travis CI，把各分支上的hexo源码，编译成网站并deploy到对应的WWWrepoXXX的github分支(以repo2（kevinluolog/hexo-klblog-src.git）的分支名字命名)-分别对应repo2-(b1:b5)，和主网站repo。</p>
+<ul>
+<li><p>用hexo g 生成</p>
+<p>自动把 <span class="title-ref">/hexo/klBlog/source/_posts</span> 目录中的 .md 生成hexo静态网页</p>
+<pre><code>hexo clean
+hexo generate</code></pre></li>
+<li><p>用hexo deploy <a href="mailto:发布到repo@gh-pages" target="_blank" rel="noopener">发布到repo@gh-pages</a>。</p>
+<pre><code>sed -i &quot;s/gh_token/${GH_TOKEN}/g&quot; ./_config.yml
+hexo deploy</code></pre></li>
+</ul>
+<p class="heading" id="hexo-klblog-src发布-网站地址">hexo-klblog-src发布 网站地址：</p>
+<ol type="1">
+<li><a href="http://kevinluolog.github.io" target="_blank" rel="noopener">kevinluolog.github.io master</a></li>
+<li><a href="http://kevinluolog.github.io/hexo-next-gemini" target="_blank" rel="noopener">kevinluolog.github.io hexo-next-gemini</a></li>
+<li><a href="http://kevinluolog.github.io/hexo-next-muse" target="_blank" rel="noopener">kevinluolog.github.io hexo-next-muse</a></li>
+<li><a href="http://kevinluolog.github.io/hexo-next-Pisces" target="_blank" rel="noopener">kevinluolog.github.io hexo-next-Pisces</a></li>
+<li><a href="http://kevinluolog.github.io/hexo-maup" target="_blank" rel="noopener">kevinluolog.github.io hexo-maup</a></li>
+</ol>
+<h4 id="网站生成工作步骤">网站生成工作步骤:</h4>
+<h5 id="目标写好即完成">目标：写好即完成</h5>
+<p>目标是只要用sublime写好.rst文档，提交就可以直接在浏览器上看到写的东西了。即只要做完step1后,step 2,step3会自动完成，然后稍等即可以step4.</p>
+<div class="line-block">step 1: 写文档 .rst<br>
+step 2: .rst 2 .md(with hexo frontmatter)<br>
+step 3: hexo编译成静态html,并发布到托管服务器<br>
+stop 4: 用浏览器浏览网站</div>
+<h5 id="数据流路径windown本地">数据流路径(windown本地):</h5>
+<ol type="1">
+<li><p>.rst 2 .md(with hexo frontmatter) (手动make)</p>
+<p>目标：</p>
+<pre><code>H:\\tmp_H\\001.work\\002git\\kdoc\\003work\\002memo
+H:\\tmp_H\\001.work\\002git\\kdoc\\003work\\006tmp
+=&gt;
+H:\\tmp_H\\001.work\\004.env\\01prjsp\\hexo\\klBlog\\source\\_posts\\kl_notes
+H:\\tmp_H\\001.work\\004.env\\01prjsp\\hexo\\klBlog\\source\\_posts\\kl_post</code></pre>
+<p>command:</p>
+<pre><code>H:\\tmp_H\\001.work\\002git\\kdoc\\003work\\000tools\\002makefiles\\001pandoc\\rst2md_hexo_copy2.bat
+
+<p>DIR_BASE_SRC=H:\tmp_H\001.work\002git\kdoc\003work\002memo ^<br>DIR_BASE_OBJ=H:\tmp_H\001.work\004.env\01prjsp\04make\01rst2md\tmp2 ^<br>DIR_BASE_COPYTO=H:\tmp_H\001.work\004.env\01prjsp\04make\01rst2md\copy2 ^</p>
+<p>此.bat用了一个临时目录，用时需要手工从copy2目录拷贝到kl_note目录。当然可以把.bat中的，obj目录直接转为kl_notes目录，就可以直接一步修改。注意把copyto目录置空。</p></code></pre></li><p></p>
+<li><p>提交 hexo编译并发布 （tracis CI 自动 ）</p>
+<pre><code>tortioseGit: H:\\tmp_H\\001.work\\004.env\\01prjsp\\hexo\\klBlog\\
+提交到 repo: hexo-klblog-src@master
+触发travis CI 自动 hexo编译成静态html =&gt; kevinluolog.github.io@master</code></pre></li>
+</ol>
+<h5 id="数据流路径travis-全自动">数据流路径(travis 全自动):</h5>
+<ol type="1">
+<li><p>写文档。</p>
+<p>【在clone下来的kdoc@dev子目录中(003work/002memo/* 003work/006tmp/*)】</p></li>
+<li><p>提交推送。</p>
+<p>【git add . ; git commit -m "" ; git push】</p></li>
+<li><p><a href="mailto:触发kdoc@dev/travis.yml工作" target="_blank" rel="noopener">触发kdoc@dev/travis.yml工作</a>，编译/002memo /006tmp/*文档内容。</p>
+<p>详细参考 <a href="#kevinluologkdoc.git-push触发">kevinluolog/kdoc.git push触发</a></p></li>
+<li><p><a href="mailto:触发hexo-klblog-src.git@xxx/travis.yml工作" target="_blank" rel="noopener">触发hexo-klblog-src.git@xxx/travis.yml工作</a>，编译/source/_posts/文档内容。</p>
+<p>详细参考 <a href>kkevinluolog/hexo-klblog-src.git push触发</a></p></li>
+<li><p>浏览发布网站地址 sphinx和hexo</p>
+<p>参考 <a href="#kdoc发布-网站地址">kdoc发布 网站地址：</a> sphinx</p>
+<p>参考 <a href="#hexo-klblog-src发布-网站地址">hexo-klblog-src发布 网站地址：</a> hexo</p></li>
+<li><p>生成输出 repo地址</p>
+<p><a href="https://github.com/travisci_out_kdoc/" target="_blank" rel="noopener">kdoc的output输出仓库网址 travisci_out_kdoc</a></p></li>
+</ol>
+</div><div class="tags"><a href="/tags/自动生成/">自动生成</a><a href="/tags/001-网站/">001.网站</a></div><div class="post-nav"><a class="pre" href="/2019/09/26/kl_notes/002memo/001software/001install/001.网站/网站资源站点/">网站资源站点</a><a class="next" href="/2019/09/26/kl_notes/002memo/000misc/extract/">extract</a></div></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/00-00misc/">00-00misc</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-00国学/">00-00国学</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-01古文/">00-01古文</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-02古训/">00-02古训</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-03小说/">00-03小说</a><span class="category-list-count">38</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-04学术/">00-04学术</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-05佛经/">00-05佛经</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-05南师/">00-05南师</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-06曾国藩/">00-06曾国藩</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-07金圣叹/">00-07金圣叹</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-08钱穆/">00-08钱穆</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-09历史/">00-09历史</a><span class="category-list-count">29</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-10英文/">00-10英文</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/000misc/">000misc</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001-make/">001.make</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001-编程/">001.编程</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001-网站/">001.网站</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001install/">001install</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001software/">001software</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/002memo/">002memo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/002plan/">002plan</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/002usage/">002usage</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/003post/">003post</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/004book/">004book</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p00其它/">p00其它</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p01散文/">p01散文</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p02读书/">p02读书</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p03旅游/">p03旅游</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p04财经/">p04财经</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p05技术/">p05技术</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p06历史/">p06历史</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p07创投/">p07创投</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p08写作/">p08写作</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p09work/">p09work</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/welcome/">welcome</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/welcome/hello/">hello</a><span class="category-list-count">1</span></li></ul></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/001software/" style="font-size: 15px;">001software</a> <a href="/tags/hello/" style="font-size: 15px;">hello</a> <a href="/tags/book/" style="font-size: 15px;">book+</a> <a href="/tags/002memo/" style="font-size: 15px;">002memo</a> <a href="/tags/post/" style="font-size: 15px;">post+</a> <a href="/tags/000misc/" style="font-size: 15px;">000misc</a> <a href="/tags/自动生成/" style="font-size: 15px;">自动生成</a> <a href="/tags/002plan/" style="font-size: 15px;">002plan</a> <a href="/tags/001install/" style="font-size: 15px;">001install</a> <a href="/tags/002usage/" style="font-size: 15px;">002usage</a> <a href="/tags/001-编程/" style="font-size: 15px;">001.编程</a> <a href="/tags/001-网站/" style="font-size: 15px;">001.网站</a> <a href="/tags/001-make/" style="font-size: 15px;">001.make</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-09历史/司马光-资治通鉴-23-01-周-原本/">司马光-资治通鉴-23-01-周-原本</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-09历史/柏杨-中国人史纲-6-5/">柏杨-中国人史纲-6-5</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-00misc/叶开-这才是中国最好的语文书-散文分册/">叶开-这才是中国最好的语文书-散文分册</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-09历史/司马光-资治通鉴-23-08-晋2-原本/">司马光-资治通鉴-23-08-晋2-原本</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-01古文/古文观止-白话注释译文-4-1/">古文观止-白话注释译文-4-1</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-07金圣叹/金圣叹-批评水浒传-4-1/">金圣叹-批评水浒传-4-1</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-03小说/明朝那些事儿-7-1/">明朝那些事儿-7-1</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-03小说/明朝那些事儿-7-5/">明朝那些事儿-7-5</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-03小说/王实甫-西厢记-2-1-小说版/">王实甫-西厢记-2-1-小说版</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-00misc/孙绍振-解读经典散文-3-2/">孙绍振-解读经典散文-3-2</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2022 <a href="/." rel="nofollow">⍟曾经走过👣.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=0.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

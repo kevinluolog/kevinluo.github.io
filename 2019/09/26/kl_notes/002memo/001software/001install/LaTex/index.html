@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>LaTex | ⍟曾经走过👣</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">LaTex</h1><a id="logo" href="/.">⍟曾经走过👣</a><p class="description">kevinluo</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/search/"><i class="fa fa-search"> 搜索</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">LaTex</h1><div class="post-meta">Sep 26, 2019<span> | </span><span class="category"><a href="/categories/001install/">001install</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.6k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-hourglass-half"></i><span class="post-count"> 7</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#memo-of-latex"><span class="toc-number">1.</span> <span class="toc-text">memo of latex</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装方法"><span class="toc-number">1.1.</span> <span class="toc-text">安装方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#tex"><span class="toc-number">1.1.1.</span> <span class="toc-text">tex</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#mitex"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">MiTex</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#texlive"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">texlive</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ide"><span class="toc-number">1.1.2.</span> <span class="toc-text">IDE</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#texmaker"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">TeXmaker</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#texstudio"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">TeXstudio</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#texworks"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">TeXworks</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sublimetext配置texlive编辑和编译环境"><span class="toc-number">1.2.</span> <span class="toc-text">SublimeText配置TexLive编辑和编译环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cli绘图工具"><span class="toc-number">1.3.</span> <span class="toc-text">CLI绘图工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#tikz和pgf"><span class="toc-number">1.3.1.</span> <span class="toc-text">TikZ和PGF</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#tikz学习"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">TiKZ学习</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#tikz绘图"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">TiKZ绘图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#程序语句使用绘图"><span class="toc-number">1.3.1.3.</span> <span class="toc-text">程序语句使用绘图</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pgfplots绘图包"><span class="toc-number">1.3.2.</span> <span class="toc-text">pgfplots绘图包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pstricks绘图"><span class="toc-number">1.3.3.</span> <span class="toc-text">PSTricks绘图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用pstricks绘制精致的流程图"><span class="toc-number">1.3.3.1.</span> <span class="toc-text">使用PSTricks绘制精致的流程图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#latex命令help"><span class="toc-number">1.4.</span> <span class="toc-text">latex命令help</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#xelatex---help"><span class="toc-number">1.4.1.</span> <span class="toc-text">xelatex --help</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#misc"><span class="toc-number">1.4.2.</span> <span class="toc-text">MISC</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#faq"><span class="toc-number">1.5.</span> <span class="toc-text">FAQ</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pdflatex和xelatex有什么区别"><span class="toc-number">1.5.1.</span> <span class="toc-text">PDFLaTeX和XeLaTeX有什么区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#latex-与-tex-有什么本质区别"><span class="toc-number">1.5.2.</span> <span class="toc-text">LaTeX 与 TeX 有什么本质区别</span></a></li></ol></li></ol></li></ol></div></div><div class="post-content"><h1 id="memo-of-latex">memo of latex</h1>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
+<h2 id="安装方法">安装方法</h2>
+<h3 id="tex">tex</h3>
+<h4 id="mitex">MiTex</h4>
+<ul>
+<li>CTEX 指的是CTEX 中文套装 Windows下则有MiKTEX 和fpTEX</li>
+<li>MiKTeX 添加中文支持, 点开 Package Manager admin), 安装 CJK 和 CJK-fonts 即可</li>
+</ul>
+<h4 id="texlive">texlive</h4>
+<h3 id="ide">IDE</h3>
+<h4 id="texmaker">TeXmaker</h4>
+<pre><code>TeXmaker设置
+
+<p>打开TexMaker-&gt;选项-&gt;配置TexMaker-&gt;命令，配置前两项如下：(如果texlive的/bin/win32/路径已经在PATH中了，就缺省就可以了)</p>
+<p>latex: &quot;C:/texlive/2016/bin/win32/latex.exe&quot; -interaction=nonstopmode %.tex</p>
+<p>Dvipm: &quot;C:/texlive/2016/bin/win32/pdflatex.exe&quot; -interacti on=nonstopmode %.tex</p></code></pre><p></p>
+<h4 id="texstudio">TeXstudio</h4>
+<h4 id="texworks">TeXworks</h4>
+<p>这是texlive 安装自带</p>
+<h2 id="sublimetext配置texlive编辑和编译环境">SublimeText配置TexLive编辑和编译环境</h2>
+<ul>
+<li><p><a href="htt://blog.csdn.net/meiqi0538/article/details/82915406" target="_blank" rel="noopener">Tex-Live安装及SublimeText 配置Tex-Live编辑和编译环境</a></p>
+<ol type="1">
+<li>LatexTools插件</li>
+<li>SumatraPDF配置</li>
+</ol></li>
+<li><p><a href="https://www.sumatrapdfreader.org/%20%20download-free-pdf-viewer.html" target="_blank" rel="noopener">下载路径</a></p></li>
+<li><p>【设置】-》【选项】</p>
+<p>"C:CommonToolsSublime Text 3Sublime Text 3sublime_text.exe" "%f:%l"</p></li>
+</ul>
+<pre><code>「LaTeXTools.sublime-settings」做以下配置：
+&quot;windows&quot;:{
+    &quot;texpath&quot; : &quot;C:\\commontools\\texlive2018\\texlive\\2018\\bin\\win32;$PATH&quot;,
+&quot;distro&quot; : &quot;texlive&quot;
+&quot;sumatra&quot;: &quot;C:\\commontools\\texlive2018\\sumatrapdf\\sumatrapdf.exe&quot;,
+}
+    &quot;builder&quot;: &quot;simple&quot;
+}</code></pre>
+<ul>
+<li>测试test.tex</li>
+</ul>
+<blockquote>
+<pre><code>\documentclass`UTF8]{ctexart}
+\begin{document}
+This is the context of the article.
+这就是文章的所有内容。
+\end{document}</code></pre>
+</blockquote>
+<h2 id="cli绘图工具">CLI绘图工具</h2>
+<h3 id="tikz和pgf">TikZ和PGF</h3>
+<h4 id="tikz学习">TiKZ学习</h4>
+<p>TikZ和PGF是一种用在TeX上的*<em>CLI绘图工具</em>*。 CLI和GUI是两种常见的绘图方式。</p>
+<p>CLI: Commad Line Interface</p>
+<blockquote>
+<p>是所想即所得（WYTIWYG）的，通过类编程的思想实现绘图，这种方式往往能够生成精确控制的函数图，常见的有PostScript、PGF、Asymptote、PSTricks等。</p>
+</blockquote>
+<p>GUI: Graphic User Interface</p>
+<blockquote>
+<p>后者则是所见即所得（WYSIWYG）的，常见的有CorelDraw、Illustrator、Photoshop、GIMP、Office、Visio等。</p>
+</blockquote>
+<p>TikZ和PGF的关系: classifier</p>
+<blockquote>
+<p>TikZ和PGF的关系则是高层和底层的关系，简单说来，TikZ基于PGF，它可以帮助我们用更易于理解的方式创建复杂的图形。</p>
+</blockquote>
+<p>PGF: 全名</p>
+<blockquote>
+<p>PGF的全名是“portable graphics format”，或者“pretty, good, functional”</p>
+</blockquote>
+<p>TikZ : 全名</p>
+<blockquote>
+<p>TikZ的命名更有趣，采用的是递归式的取名：“TikZ ist kein Zeichenprogramm”(TikZ is not a drawing program)。 类似的取名最出名的恐怕就是GNU（GNU is Not Unix）了。</p>
+</blockquote>
+<ol type="1">
+<li><p><a href="http://www.texample.net/tikz/" target="_blank" rel="noopener">TikZ的官网：内含很多示例代码</a></p></li>
+<li><p><a href="https://www.overleaf.com" target="_blank" rel="noopener">LateX在线编辑工具</a></p></li>
+<li><p><a href="http://cremeronline.com/LaTeX/minimaltikz.pdf" target="_blank" rel="noopener">TikZ快速入门文档</a></p></li>
+<li><p><a href="https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Basic_Drawing" target="_blank" rel="noopener">LaTeX Graphics using TikZ: A Tutorial p1</a></p></li>
+<li><p><a href="http://blog.sina.com.cn/s/blog_97d042500101g4jk.html" target="_blank" rel="noopener">TikZ绘图学习笔记</a> LaTeX中支持PGF(Portable Graphics Format/Pretty,Good,Functional).PGF能够画出精确的图像，但因为非所见即所得，所以学习起来也有一定难度。</p>
+<p>在*<em>TeX中绘制图形有很多方法，例如picture环境、pstricks宏包、xypic宏包、dratex宏包、metapost宏包等</em>*。PGF也是其中一种。PGF的结构包括系统层、基础层和前段层。在通常情况下，用户只会接触到如TikZ的前端层。TikZ是PGF的扩展，由同一个作者开发。</p></li>
+<li><p><a href="https://www.cnblogs.com/tsingke/p/6649800.html" target="_blank" rel="noopener">Latex--TikZ和PGF--高级文本绘图，思维绘图，想到--得到！</a> 这个网址收集了比较齐全的学习网址</p></li>
+<li><p><a href="https://www.ctan.org/pkg/pgf" target="_blank" rel="noopener">tikz &amp; pgf manual - CTAN: Package pgf</a> 用户手册，源码 <a href="https://github.com/pgf-tikz/pgf" target="_blank" rel="noopener">gitHub源码仓库</a></p></li>
+</ol>
+<h4 id="tikz绘图">TiKZ绘图</h4>
+<ol type="1">
+<li>使用 LaTeX 宏包 TikZ 来绘制矢量流程图
+<ul>
+<li><a href="https://blog.csdn.net/tuzixini/article/details/72957211" target="_blank" rel="noopener">Latex 绘制流程图</a></li>
+<li><a href="https://blog.csdn.net/weixin_44420912/article/details/86418033" target="_blank" rel="noopener">LaTeX中TikZ绘图备忘一</a> 编译器结构图</li>
+<li><a href="https://blog.csdn.net/sunwukong54/article/details/28292097" target="_blank" rel="noopener">latex tikz使用总结</a></li>
+</ul></li>
+</ol>
+<h4 id="程序语句使用绘图">程序语句使用绘图</h4>
+<ol>
+<li><a href="https://blog.csdn.net/rumswell/article/details/37962003" target="_blank" rel="noopener">LaTex中使用循环连续绘图的例子</a></li>
+<li><a href="https://blog.csdn.net/lishoubox/article/details/7316224" target="_blank" rel="noopener">ifthen宏包使用——条件判断与循环语句</a></li>
+</ol>
+<h3 id="pgfplots绘图包">pgfplots绘图包</h3>
+<p><a href="htt://blog.csdn.net/stereohomology/article/details/24266409" target="_blank" rel="noopener">在LaTeX中使用强大的pgfplots绘图包</a></p>
+<h3 id="pstricks绘图">PSTricks绘图</h3>
+<h4 id="使用pstricks绘制精致的流程图">使用PSTricks绘制精致的流程图</h4>
+<p><a href="http://blog.sina.com.cn/s/blog_5e16f1770102e77g.html" target="_blank" rel="noopener">使用PSTricks绘制精致的流程图</a> 一个好用的package地址在http://texnik.dante.de/tex/generic/pstricks-add/ 大家也可以下载替换系统的 texlive/2011/texmf-local/tex/generic/pstricks-add/pstricks-add.tex 文件，或者就放在自己编码的文件目录下也可。 我们可以利用已有的命令绘制出精致的流程图</p>
+<h2 id="latex命令help">latex命令help</h2>
+<h3 id="xelatex---help">xelatex --help</h3>
+<pre><code>xelatex --help
+Usage: xetex [OPTION]... [TEXNAME[.tex]] [COMMANDS]
+   or: xetex [OPTION]... \FIRST-LINE
+   or: xetex [OPTION]... &amp;FMT ARGS
+  Run XeTeX on TEXNAME, usually creating TEXNAME.pdf.
+  Any remaining COMMANDS are processed as XeTeX input, after TEXNAME is read.
+  If the first line of TEXNAME is %&amp;FMT, and FMT is an existing .fmt file,
+  use it.  Else use `NAME.fmt&#39;, where NAME is the program invocation name,
+  most commonly `xetex&#39;.
+
+<p>  Alternatively, if the first non-option argument begins with a backslash,<br>  interpret all non-option arguments as a line of XeTeX input.</p>
+<p>  Alternatively, if the first non-option argument begins with a &amp;, the<br>  next word is taken as the FMT to read, overriding all else.  Any<br>  remaining arguments are processed as above.</p>
+<p>  If no arguments or options are specified, prompt for input.</p>
+<p>-etex                   enable e-TeX extensions<br>[-no]-file-line-error   disable/enable file:line:error style messages<br>-fmt=FMTNAME            use FMTNAME instead of program name or a %&amp; line<br>-halt-on-error          stop processing at the first error<br>-ini                    be xeinitex, for dumping formats; this is implicitly<br>                          true if the program name is <code>xeinitex&amp;#39;
+-interaction=STRING     set interaction mode (STRING=batchmode/nonstopmode/
+                          scrollmode/errorstopmode)
+-jobname=STRING         set the job name to STRING
+-kpathsea-debug=NUMBER  set path searching debugging flags according to
+                          the bits of NUMBER
+[-no]-mktex=FMT         disable/enable mktexFMT generation (FMT=tex/tfm)
+-mltex                  enable MLTeX extensions such as \charsubdef
+-output-comment=STRING  use STRING for XDV file comment instead of date
+-output-directory=DIR   use existing DIR as the directory to write files in
+-output-driver=CMD      use CMD as the XDV-to-PDF driver instead of xdvipdfmx
+-no-pdf                 generate XDV (extended DVI) output rather than PDF
+[-no]-parse-first-line  disable/enable parsing of first line of input file
+-papersize=STRING       set PDF media size to STRING
+-progname=STRING        set program (and fmt) name to STRING
+-recorder               enable filename recorder
+[-no]-shell-escape      disable/enable \write18{SHELL COMMAND}
+-shell-restricted       enable restricted \write18
+-src-specials           insert source specials into the XDV file
+-src-specials=WHERE     insert source specials in certain places of
+                          the XDV file. WHERE is a comma-separated value
+                          list: cr display hbox math par parend vbox
+-synctex=NUMBER         generate SyncTeX data for previewers according to
+                          bits of NUMBER (</code>man synctex&#39; for details)<br>-translate-file=TCXNAME (ignored)<br>-8bit                   make all characters printable, don&#39;t use ^^X sequences<br>-help                   display this help and exit<br>-version                output version information and exit</p></code></pre><p></p>
+<p>TIPS ===</p>
+<h3 id="misc">MISC</h3>
+<ol type="1">
+<li>参考文献可以搜bibtex，</li>
+<li>制作幻灯片可以搜beamer。</li>
+</ol>
+<h2 id="faq">FAQ</h2>
+<h3 id="pdflatex和xelatex有什么区别">PDFLaTeX和XeLaTeX有什么区别</h3>
+<dl>
+<dt>区别: pdflatex and xelatex</dt>
+<dd><p>pdfLaTeX是比较原始的版本，对Unicode的支持不是很好，所以显示汉字需要使用CJK宏包。它不支持操作系统的truetype字体(*.ttf)，只能使用type1字体。优点是支持的宏包比较多，有些老一点的宏包必须用pdfLaTeX来编译。XeLaTeX是新的Unicode版本，内建支持Unicode(UTF-8)，自然也包括汉字在内，而且可以调用操作系统的truetype字体。如果你的文档有汉字，那么推荐用XeLaTeX。缺点是不支持某一些宏包。</p>
+</dd>
+</dl>
+<h3 id="latex-与-tex-有什么本质区别">LaTeX 与 TeX 有什么本质区别</h3>
+<p>TeX是排版引擎，是给机器下指令的。它有好多种具体的实现。 LaTeX是宏包，方便用户调用TeX。 另外，比如XeTeX同样也是排版引擎，是TeX的一种实现，增加了对万国码的支持。 XeLaTeX是宏包，是指使用宏包LaTeX调用排版引擎XeTeX。</p>
+</div><div class="tags"><a href="/tags/自动生成/">自动生成</a><a href="/tags/001install/">001install</a></div><div class="post-nav"><a class="pre" href="/2019/09/26/kl_notes/002memo/004.study/001.编程/study/">study</a><a class="next" href="/2019/09/26/kl_notes/002memo/001software/001install/make/">make</a></div></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/00-00misc/">00-00misc</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-00国学/">00-00国学</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-01古文/">00-01古文</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-02古训/">00-02古训</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-03小说/">00-03小说</a><span class="category-list-count">38</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-04学术/">00-04学术</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-05佛经/">00-05佛经</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-05南师/">00-05南师</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-06曾国藩/">00-06曾国藩</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-07金圣叹/">00-07金圣叹</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-08钱穆/">00-08钱穆</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-09历史/">00-09历史</a><span class="category-list-count">29</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-10英文/">00-10英文</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/000misc/">000misc</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001-make/">001.make</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001-编程/">001.编程</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001-网站/">001.网站</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001install/">001install</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001software/">001software</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/002memo/">002memo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/002plan/">002plan</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/002usage/">002usage</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/003post/">003post</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/004book/">004book</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p00其它/">p00其它</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p01散文/">p01散文</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p02读书/">p02读书</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p03旅游/">p03旅游</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p04财经/">p04财经</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p05技术/">p05技术</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p06历史/">p06历史</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p07创投/">p07创投</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p08写作/">p08写作</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p09work/">p09work</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/welcome/">welcome</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/welcome/hello/">hello</a><span class="category-list-count">1</span></li></ul></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/001software/" style="font-size: 15px;">001software</a> <a href="/tags/hello/" style="font-size: 15px;">hello</a> <a href="/tags/book/" style="font-size: 15px;">book+</a> <a href="/tags/002memo/" style="font-size: 15px;">002memo</a> <a href="/tags/post/" style="font-size: 15px;">post+</a> <a href="/tags/000misc/" style="font-size: 15px;">000misc</a> <a href="/tags/自动生成/" style="font-size: 15px;">自动生成</a> <a href="/tags/002plan/" style="font-size: 15px;">002plan</a> <a href="/tags/001install/" style="font-size: 15px;">001install</a> <a href="/tags/002usage/" style="font-size: 15px;">002usage</a> <a href="/tags/001-编程/" style="font-size: 15px;">001.编程</a> <a href="/tags/001-网站/" style="font-size: 15px;">001.网站</a> <a href="/tags/001-make/" style="font-size: 15px;">001.make</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-09历史/司马光-资治通鉴-23-01-周-原本/">司马光-资治通鉴-23-01-周-原本</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-09历史/柏杨-中国人史纲-6-5/">柏杨-中国人史纲-6-5</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-00misc/叶开-这才是中国最好的语文书-散文分册/">叶开-这才是中国最好的语文书-散文分册</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-09历史/司马光-资治通鉴-23-08-晋2-原本/">司马光-资治通鉴-23-08-晋2-原本</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-01古文/古文观止-白话注释译文-4-1/">古文观止-白话注释译文-4-1</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-07金圣叹/金圣叹-批评水浒传-4-1/">金圣叹-批评水浒传-4-1</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-03小说/明朝那些事儿-7-1/">明朝那些事儿-7-1</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-03小说/明朝那些事儿-7-5/">明朝那些事儿-7-5</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-03小说/王实甫-西厢记-2-1-小说版/">王实甫-西厢记-2-1-小说版</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-00misc/孙绍振-解读经典散文-3-2/">孙绍振-解读经典散文-3-2</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2022 <a href="/." rel="nofollow">⍟曾经走过👣.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=0.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

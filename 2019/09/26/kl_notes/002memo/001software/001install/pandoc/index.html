@@ -1,0 +1,363 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>pandoc | ⍟曾经走过👣</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.0/jquery.min.js"></script><link rel="icon" mask sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">pandoc</h1><a id="logo" href="/.">⍟曾经走过👣</a><p class="description">kevinluo</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/search/"><i class="fa fa-search"> 搜索</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">pandoc</h1><div class="post-meta">Sep 26, 2019<span> | </span><span class="category"><a href="/categories/001install/">001install</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 2.8k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-hourglass-half"></i><span class="post-count"> 13</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#pandoc"><span class="toc-number">1.</span> <span class="toc-text">pandoc</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#install"><span class="toc-number">1.1.</span> <span class="toc-text">install</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#informations"><span class="toc-number">1.2.</span> <span class="toc-text">informations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tips"><span class="toc-number">1.3.</span> <span class="toc-text">tips</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参数"><span class="toc-number">1.3.1.</span> <span class="toc-text">参数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#basic"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">basic</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#template"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">template</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pdf"><span class="toc-number">1.3.1.3.</span> <span class="toc-text">pdf</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#slide"><span class="toc-number">1.3.1.4.</span> <span class="toc-text">slide</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#math-rendering-in-html"><span class="toc-number">1.3.1.5.</span> <span class="toc-text">Math rendering in HTML</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#command"><span class="toc-number">1.4.</span> <span class="toc-text">command</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#md-web-slide-reveal.js-s5-slideous-slidy"><span class="toc-number">1.4.1.</span> <span class="toc-text">md-&gt;web slide (reveal.js s5 slideous slidy)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#slide-javascription-solutions"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">slide Javascription solutions</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#default-url-location"><span class="toc-number">1.4.1.2.</span> <span class="toc-text">default Url location</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#web-slide-commad"><span class="toc-number">1.4.1.3.</span> <span class="toc-text">web slide commad:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#command-md-pdf"><span class="toc-number">1.4.1.4.</span> <span class="toc-text">command (md-&gt;pdf):</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#command-md-html"><span class="toc-number">1.4.1.5.</span> <span class="toc-text">command (md-&gt;html)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#faq"><span class="toc-number">1.5.</span> <span class="toc-text">faq</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pandoc生成slide时怎么用本地相对路径嵌入javascription代码-s-stand-alone"><span class="toc-number">1.5.1.</span> <span class="toc-text">pandoc生成SLIDE时，怎么用本地相对路径嵌入javascription代码？-s –stand-alone</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#怎么直接生成网页slide"><span class="toc-number">1.5.2.</span> <span class="toc-text">怎么直接生成网页SLIDE?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#怎么把javascriptcss链接资源定位到指定目录"><span class="toc-number">1.5.3.</span> <span class="toc-text">怎么把javascript/css链接资源定位到指定目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#怎么把图片链接资源定位到指定目录"><span class="toc-number">1.5.4.</span> <span class="toc-text">怎么把图片链接资源定位到指定目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#怎么直接生成pdf形式的ppt--t-beamer"><span class="toc-number">1.5.5.</span> <span class="toc-text">怎么直接生成pdf形式的PPT? -t beamer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#怎么直接生成docx文件"><span class="toc-number">1.5.6.</span> <span class="toc-text">怎么直接生成DOCX文件？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#怎么指定并修改pandoc用的pptxdocx的模板文件"><span class="toc-number">1.5.7.</span> <span class="toc-text">怎么指定并修改pandoc用的pptx/docX的模板文件？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#为何latex的book类型中目录及chapter前自动插入空白页面"><span class="toc-number">1.5.8.</span> <span class="toc-text">为何LaTex的book类型中，目录及chapter前自动插入空白页面?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#拼接pdf"><span class="toc-number">1.5.9.</span> <span class="toc-text">拼接PDF</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#md-pdfbook时怎么添加章节号-markdown语法解决"><span class="toc-number">1.5.10.</span> <span class="toc-text">md-pdfbook时，怎么添加章节号？ markdown语法解决</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考"><span class="toc-number">1.6.</span> <span class="toc-text">参考</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参考文章"><span class="toc-number">1.6.1.</span> <span class="toc-text">参考文章</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#misc"><span class="toc-number">1.7.</span> <span class="toc-text">MISC</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pandoc-基本命令"><span class="toc-number">1.7.1.</span> <span class="toc-text">pandoc 基本命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pandoc帮助文档摘录"><span class="toc-number">1.7.2.</span> <span class="toc-text">pandoc帮助文档摘录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#待处理摘录"><span class="toc-number">1.7.2.1.</span> <span class="toc-text">待处理摘录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#heading-identifiers"><span class="toc-number">1.7.2.2.</span> <span class="toc-text">Heading identifiers</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#My-heading"><span class="toc-number">2.</span> <span class="toc-text">My heading {-}</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#My-heading-unnumbered"><span class="toc-number">3.</span> <span class="toc-text">My heading {.unnumbered}</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#writage是一款word插件"><span class="toc-number">3.0.1.</span> <span class="toc-text">Writage是一款word插件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tips-1"><span class="toc-number">3.1.</span> <span class="toc-text">tips</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#列出电脑中已安装字体"><span class="toc-number">3.1.1.</span> <span class="toc-text">列出电脑中已安装字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文档内部跳转"><span class="toc-number">3.1.2.</span> <span class="toc-text">文档内部跳转</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#转换时发现的注意事项"><span class="toc-number">3.2.</span> <span class="toc-text">转换时发现的注意事项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#rst2md"><span class="toc-number">3.2.1.</span> <span class="toc-text">rst2md</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#pandoc不支持的rst部分功能"><span class="toc-number">3.2.1.1.</span> <span class="toc-text">PANDOC不支持的RST部分功能</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#右下划线不能引用链接inline链接title除外"><span class="toc-number">3.2.1.1.1.</span> <span class="toc-text">右下划线不能引用链接inline链接，title除外</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#md2slide"><span class="toc-number">3.2.2.</span> <span class="toc-text">md2slide</span></a></li></ol></li></ol></div></div><div class="post-content"><h1 id="pandoc">pandoc</h1>
+<div class="contents">
+<p>目录</p>
+</div>
+<div class="section-numbering">
+
+</div>
+<h2 id="install">install</h2>
+<h2 id="informations">informations</h2>
+<ol type="1">
+<li><p><a href="https://ctan.org/pkg/beamer" target="_blank" rel="noopener">beamer</a></p>
+<p>slide support of latex, same author with TikZ(CLI Package)</p></li>
+</ol>
+<h2 id="tips">tips</h2>
+<h3 id="参数">参数</h3>
+<h4 id="basic">basic</h4>
+<ol type="1">
+<li><p>pandoc -f -t -o</p>
+<pre><code>-f --from:-r --read： inputfile format
+-t --to:-w --write: outputfile format
+pandoc -f markdown -t latex hello.txt -o hi.tex</code></pre></li>
+<li><p>–list-output-formats –list-input-formats</p>
+<p>查看输入输出格式支持格式</p></li>
+<li><p>–atx-headers</p>
+<p>Use ATX-style headings in Markdown output. The default is to use setext-style headings for levels 1 to 2, and then ATX headings.</p></li>
+<li><p>–reference-links</p></li>
+</ol>
+<h4 id="template">template</h4>
+<ol type="1">
+<li><p>-V/–variable</p>
+<p>Templates contain variables, which allow for the inclusion of arbitrary information at any point in the file. They may be <strong>set at the command line using the -V/–variable option</strong>.</p>
+<p><em>If a variable is not set</em>, pandoc will look for the key in the document’s metadata – which can be <strong>set using either YAML metadata blocks or with the -M/–metadata option</strong>.</p>
+<p><code>-V slidy-url=slidy2</code> : 指定slidy Javascriptions 引用路径</p></li>
+<li><p>pandoc -D <em>FORMAT</em></p>
+<p>where FORMAT is the name of the output format. A custom template can be specified using the –template option. You can also override the system default templates for a given output format FORMAT by putting a file templates default.<em>FORMAT</em> in the user data directory (see <strong>–data-dir</strong>, above). Exceptions:</p>
+<ul>
+<li><p>For odt output, customize the default.opendocument template.</p></li>
+<li><p>For pdf output, customize the <strong>default.latex</strong> template (or the default.context template, if you use -t context, or the default.ms template, if you use -t ms, or the default.html template, if you use -t html).</p></li>
+<li><p>docx and pptx have no template (however, you can use –reference-doc to customize the output).</p>
+<pre><code>pandoc slidy00.md .\templates\metadata.yml -o slidy00.tex --template .\templates\default.latex
+or
+pandoc slidy00.md .\templates\metadata.yml -o slidy00.tex --data-dir= .\templates</code></pre></li>
+</ul></li>
+</ol>
+<h4 id="pdf">pdf</h4>
+<ol type="1">
+<li><p>–pdf-engine=xelatex</p>
+<pre><code>xelatex： unicode汉字支持，新
+pdflatex: 不支持汉字，旧
+-t html defaults to --pdf-engine=wkhtmltopdf</code></pre></li>
+<li><p>-N,–number-sections</p>
+<p>Number section headings in LaTeX, ConTeXt, HTML, or EPUB output. By default, sections are not numbered.</p></li>
+</ol>
+<h4 id="slide">slide</h4>
+<ol type="1">
+<li><p>–number-offset=NUMBER[,NUMBER,…]</p>
+<p>[slide list item show one by one]</p></li>
+<li><p>–slide-level=NUMBER</p>
+<p>Specifies that headings with the specified level create slides (for beamer, s5, slidy, slideous, dzslides).</p></li>
+<li><p>–reference-doc=FILE</p>
+<p>Use the specified file as a style reference in producing a docx or ODT file.</p>
+<ul>
+<li>Docx
+<ul>
+<li><p>reference.docx:</p>
+<p>pandoc -o custom-reference.docx –print-default-data-file reference.docx.</p></li>
+</ul></li>
+<li>PowerPoint
+<ul>
+<li><p>reference.pptx:</p>
+<p>pandoc -o custom-reference.pptx –print-default-data-file reference.pptx</p></li>
+</ul></li>
+</ul></li>
+<li><p>title-meta, author-meta, and date-meta</p>
+<ul>
+<li><p>pandoc:</p>
+<pre><code>% title
+% author(s) (separated by semicolons)
+% date
+
+<p>有没有的要加%空行</p>
+<p>%<br>% Author</p>
+<p>% My title<br>%<br>% June 15, 2006</p></code></pre></li><p></p>
+</ul></li>
+<li><p><code>--resource-path --extract-media</code></p>
+<pre><code>pandoc -t slideous -s slidy.md -o slidous.html -i --resource-path=.:resource\pic --extract-media=resource\pic
+
+<p>–extract-media： 表示把链接的文件输出到指定的目录<br>–resource-path： 表示指定链接的相对位置，相对于工作目录，用了这个需要显示指明当前目录.。同时这个选项只能和–self-contained 或者–extract-media一起用。</p></code></pre></li><p></p>
+</ol>
+<h4 id="math-rendering-in-html">Math rendering in HTML</h4>
+<ol type="1">
+<li>–mathjax[=URL]</li>
+<li>–mathml</li>
+<li>–webtex[=URL]</li>
+</ol>
+<p>Convert TeX formulas to tags that link to an external script that converts formulas to images.</p>
+<p>svg: <a href="https://latex.codecogs.com/svg.latex" target="_blank" rel="noopener">https://latex.codecogs.com/svg.latex</a>? png: <a href="https://latex.codecogs.com/png.latex" target="_blank" rel="noopener">https://latex.codecogs.com/png.latex</a>?</p>
+<h2 id="command">command</h2>
+<h3 id="md-web-slide-reveal.js-s5-slideous-slidy">md-&gt;web slide (reveal.js s5 slideous slidy)</h3>
+<h4 id="slide-javascription-solutions">slide Javascription solutions</h4>
+<table>
+<thead>
+<tr class="header">
+<th>name</th>
+<th>explaination</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>dzslides</td>
+<td>(DZSlides HTML5 + JavaScript slide show)</td>
+</tr>
+<tr class="even">
+<td>revealjs</td>
+<td>(reveal.js HTML5 + JavaScript slide show)</td>
+</tr>
+<tr class="odd">
+<td>s5</td>
+<td>(S5 HTML and JavaScript slide show)</td>
+</tr>
+<tr class="even">
+<td>slideous</td>
+<td>(Slideous HTML and JavaScript slide show)</td>
+</tr>
+<tr class="odd">
+<td>slidy</td>
+<td>(Slidy HTML and JavaScript slide show)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="default-url-location">default Url location</h4>
+<table>
+<colgroup>
+<col style="width: 54%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>name</th>
+<th>explaination</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>revealjs-url</td>
+<td>base URL for reveal.js (defaults to reveal.js)</td>
+</tr>
+<tr class="even">
+<td>s5-url</td>
+<td>base URL for S5 (defaults to s5/default)</td>
+</tr>
+<tr class="odd">
+<td>slideous-url</td>
+<td>base URL for Slideous (defaults to slideous)</td>
+</tr>
+<tr class="even">
+<td>slidy-url</td>
+<td>base URL for Slidy (defaults to <a href="https://www.w3.org/Talks/Tools" target="_blank" rel="noopener">https://www.w3.org/Talks/Tools</a> /Slidy2)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="web-slide-commad">web slide commad:</h4>
+<ol type="1">
+<li><p>md-&gt;dzslides</p>
+<pre><code>pandoc -t dzslides -s slidy.md -o dzslides.html -i --slide-level=2 --resource-path=.:resource\pic --extract-media=resource\pic</code></pre></li>
+<li><p>md-&gt;revealjs:</p>
+<pre><code>pandoc -t revealjs -s slidy.md -o revealjs.html -i --slide-level=2 --resource-path=.:resource\pic --extract-media=resource\pic -V revealjs-url=reveal.js</code></pre></li>
+<li><p>md-&gt;s5:</p>
+<pre><code>pandoc -t s5 -s slidy.md -o s5.html -i --slide-level=2 --resource-path=.:resource\pic --extract-media=resource\pic -V s5-url=s5\ui\default</code></pre></li>
+<li><p>md-&gt;slideous:</p>
+<pre><code>pandoc -t slideous -s slidy.md -o slideous.html -i --slide-level=1 --resource-path=.:resource\pic --extract-media=resource\pic -V s5-url=slideous</code></pre></li>
+<li><p>md-&gt;slidy:</p>
+<pre><code>pandoc -t slidy -s slidy.md -o slidy.html -i --slide-level=2 --resource-path=.:resource\pic --extract-media=resource\pic -V slidy-url=slidy2</code></pre></li>
+</ol>
+<h4 id="command-md-pdf">command (md-&gt;pdf):</h4>
+<ol type="1">
+<li><p>xelatex 终稿</p>
+<p>配合两个文件：</p>
+<ul>
+<li><p>metadata.yaml</p>
+<p>元变量 可用 -V 在命令行输入</p>
+<p>注意: 要加入 --metadata-file 或 -M 引用metadata.yaml, pandoc帮助文档的案例是.md 的文件不用加，但是实践证明，在.rst转成.pdf时，必须要加上，不然直接加入了文档中，同时因引用不到汉字字体定义CJKmainfont: "SimSun"，会报错汉字找不到。所以统一加上。</p></li>
+<li><p>default.latex</p>
+<p>修改了latex的模板，主要是为了框线链接</p></li>
+<li><p>分两步，-&gt;.tex -&gt;.pdf</p>
+<pre><code>pandoc slidy00.md --metadata-file .\templates\metadata.yaml -o slidy00.tex -s -N --toc --toc-depth=3 --template .\templates\default.latex
+
+<p>xelatex slidy00.tex</p></code></pre></li><p></p>
+<li><p>一步头</p>
+<pre><code>pandoc slidy00.md --metadata-file .\templates\metadata.yaml --pdf-engine=xelatex -o slidy00.pdf -s -N --toc --toc-depth=3 --data-dir=.\templates</code></pre></li>
+</ul></li>
+<li><p>xelatex</p>
+<pre><code>pandoc slidy.md -o pdf.pdf --pdf-engine=xelatex -i</code></pre>
+<ul>
+<li><p>xelatex可以支持中文，同时缺省是支持目录的。</p></li>
+<li><p>所以不用加-toc,–table-of-contents,</p></li>
+<li><p>-i,表示目录加上数字</p>
+<pre><code>pandoc slidy.md -o pdf.tex -s
+xelatex pdf.tex -o pdf1.pdf -V CJKmainfont=xecjk</code></pre></li>
+</ul></li>
+<li><p>参考网上xelatex</p>
+<p><a href="https://www.jianshu.com/p/dcc2f95cc086" target="_blank" rel="noopener">参考链接</a></p>
+<pre><code>pandoc --pdf-engine=xelatex --template=D:\tools\Pandoc\pm-template.latex test.md -o test.pdf</code></pre>
+<p><a href="https://github.com/tzengyuxio/pages/blob/gh-pages/pandoc/pm-template.latex" target="_blank" rel="noopener">Tzeng Yuxio的支持中文latex模板文件</a></p></li>
+</ol>
+<h4 id="command-md-html">command (md-&gt;html)</h4>
+<ol type="1">
+<li><p>my</p></li>
+<li><p>参考网上</p>
+<pre><code>pandoc -s -f gfm -t html5 --css=css/markdownPad-github.css test.md -o test.html</code></pre>
+<p><a href="https://github.com/nicolashery/markdownpad-github" target="_blank" rel="noopener">markdownPad-github.css</a></p>
+<p>自己指定CSS显示模板</p></li>
+</ol>
+<h2 id="faq">faq</h2>
+<h3 id="pandoc生成slide时怎么用本地相对路径嵌入javascription代码-s-stand-alone">pandoc生成SLIDE时，怎么用本地相对路径嵌入javascription代码？-s –stand-alone</h3>
+<ol type="1">
+<li><p>To produce an HTML/JavaScript slide show, simply type</p>
+<p>pandoc -t FORMAT -s habits.txt -o habits.html</p>
+<p>where FORMAT is either s5, slidy, slideous, dzslides, or revealjs.</p>
+<p>For Slidy, Slideous, reveal.js, and S5, the file produced by pandoc with the -s/–standalone option embeds a link to JavaScript and CSS files, which are assumed to be available at the relative path s5/default (for S5), slideous (for Slideous), reveal.js (for reveal.js), or at the Slidy website at w3.org (for Slidy).</p></li>
+<li><p>These paths can be changed by setting variables: the slidy-url, slideous-url, revealjs-url, or s5-url</p>
+<pre><code>变量前面要加上 -V
+-V slidy-url=slidy2 : 指定slidy Javascriptions 引用路径</code></pre></li>
+<li><p>For DZSlides, the (relatively short) JavaScript and CSS are included in the file by default.</p></li>
+<li><p>With all HTML slide formats, the <code>--self-contained</code> option can be used to produce a single file that contains all of the data necessary to display the slide show, including linked scripts, stylesheets, images, and videos.</p></li>
+</ol>
+<h3 id="怎么直接生成网页slide">怎么直接生成网页SLIDE?</h3>
+<pre><code>pandoc -t FORMAT -s habits.txt -o habits.html
+-i : incremental 指定逐步显示列表项
+-slide--level: 指定第几级Header开始分slide页面
+-s --stand-alone: 相对目录（slidy 除外），并包头部</code></pre>
+<h3 id="怎么把javascriptcss链接资源定位到指定目录">怎么把javascript/css链接资源定位到指定目录</h3>
+<p>slidy-url, slideous-url, revealjs-url, or s5-url variables</p>
+<h3 id="怎么把图片链接资源定位到指定目录">怎么把图片链接资源定位到指定目录</h3>
+<pre><code>pandoc -t slideous -s slidy.md -o slidous.html -i --resource-path=.:resource\pic --extract-media=resource\pic</code></pre>
+<h3 id="怎么直接生成pdf形式的ppt--t-beamer">怎么直接生成pdf形式的PPT? -t beamer</h3>
+<p>To produce a PDF slide show using beamer, type</p>
+<pre><code>pandoc -t beamer habits.txt -o habits.pdf</code></pre>
+<h3 id="怎么直接生成docx文件">怎么直接生成DOCX文件？</h3>
+<pre><code>pandoc slidy.md -o slide.docx --toc --toc-depth=6 -N
+--toc, --table-of-contents
+--toc-depth=NUMBER
+--resource-path=SEARCHPATH : --resource-path=.:test will search the working directory and the test subdirectory</code></pre>
+<h3 id="怎么指定并修改pandoc用的pptxdocx的模板文件">怎么指定并修改pandoc用的pptx/docX的模板文件？</h3>
+<h3 id="为何latex的book类型中目录及chapter前自动插入空白页面">为何LaTex的book类型中，目录及chapter前自动插入空白页面?</h3>
+<ul>
+<li><a href="https://blog.csdn.net/Sarah_LZ/article/details/90737631" target="_blank" rel="noopener">LaTex的book类型中，目录及chapter前自动插入空白页面</a>
+<ol type="1">
+<li><p>如题，在book中开新的chapter，前面总是自动留空白页面，而且封面与目录之间也总是多出一张空白页，怎么设置页码都不会消除.</p>
+<p>原因说明</p>
+<p>在book类中，默认目录与每一章都从奇数页码开始，如果上一章的结束刚好是奇数页码，就默认在后面补充一张空白页作为偶数页，使得下一章仍从奇数页码开始. 这是book的排版规范.</p>
+<p>此外documentclass中有一对选项openright和openany, book类默认为openright模式，这也是为什么book类的奇数页面与偶数页面的左右页边距刚好相反的原因.</p></li>
+<li><p>如何解决book中自动留白的问题</p>
+<div class="line-block">还有一对选项：oneside和twoside，book类文档默认为twoside模式：双面打印模式，在这种模式下，默认新章节从奇数页码开始打印，所以会自动留白, 我们只需要在documentclass的选项中指定book为oneside的模式，就可以消除留白. 如下：<br>
+’</div></li>
+</ol></li>
+</ul>
+<h3 id="拼接pdf">拼接PDF</h3>
+<p>其实用tex就可以合并pdf, 而且这个方法是跨平台的,无论widows, linux, Mac X, 只要有装了tex和宏包pdfpages,这个宏包一般的tex发行版默认都包含了, texlive就已经有了. 代码:</p>
+<pre><code>//documentclass[a4paper]{article}
+//usepackage{pdfpages}
+//begin{document}
+//includepdfmerge{1.pdf,1-3}
+//includepdfmerge{2.pdf,5-13}
+//end{document}
+其中命令//includepdfmerge{1.pdf,1-3}就是导入1.pdf的1至3页.
+命令//includepdfmerge{2.pdf,5-13}就是导入2.pdf的5至13页.</code></pre>
+<h3 id="md-pdfbook时怎么添加章节号-markdown语法解决">md-pdfbook时，怎么添加章节号？ markdown语法解决</h3>
+<ul>
+<li><p><a href="https://blog.csdn.net/F8qG7f9YD02Pe/article/details/83629436" target="_blank" rel="noopener">用 Pandoc 生成一篇调研论文 | Linux 中国</a></p>
+<pre><code>Implementation 这个标题使用了 H1 并且声明了一个 {#sec:implementation} 的标签，这是作者用于引用该章节的标签。要想引用一个章节，输入 @符号并跟上对应章节标签，使用方括号括起来即可： [@sec:implementation]</code></pre></li>
+</ul>
+<h2 id="参考">参考</h2>
+<h3 id="参考文章">参考文章</h3>
+<ul>
+<li><a href="https://www.jianshu.com/p/be291ac296c3" target="_blank" rel="noopener">Pandoc使用技巧</a></li>
+<li><a href="https://www.jianshu.com/p/a97b4a9f6d5b" target="_blank" rel="noopener">【转】RStudio+Markdown+Pandoc的中文配置</a></li>
+<li><a href="https://www.jianshu.com/p/0e0abc6feeb3" target="_blank" rel="noopener">Pandoc中使用Reveal.js制作幻灯片</a></li>
+<li><a href="https://www.jianshu.com/p/dcc2f95cc086" target="_blank" rel="noopener">Pandoc的使用和遇到的问题</a></li>
+</ul>
+<h2 id="misc">MISC</h2>
+<h3 id="pandoc-基本命令">pandoc 基本命令</h3>
+<pre><code>-f: 指定输入格式，比如docx、epub、md、html等
+-t: 指定输出格式，比如docx、epub、md、html等
+-o: 输出到file文件
+--verbost: 显示详细调试信息
+--log： 指定输出日志信息
+
+<p>–list-input-formats：列出支持的输入格式。<br>–list-output-formats：列出支持的输出格式。<br>–list-extensions：列表支持Markdown扩展，后面跟一个+或者-说明是否在pandoc的Markdown中默认启用。<br>–list-highlight-languages:列出语法突出显示支持的语言。<br>–list-highlight-styles:列出支持语法高亮的样式。。<br>-v: 打印版本信息。<br>-h：显示语法帮助</p></code></pre><p></p>
+<h3 id="pandoc帮助文档摘录">pandoc帮助文档摘录</h3>
+<h4 id="待处理摘录">待处理摘录</h4>
+<pre><code>package: xcolor hypreff 用来设置TOC颜色 link外框线</code></pre>
+<h4 id="heading-identifiers">Heading identifiers</h4>
+<pre><code>- Extension: header_attributes
+    {#identifier .class .class key=value key=value}
+- example: will all be assigned the identifier foo:
+    # My heading {#foo}
+    ## My heading ##    {#foo}
+    My other heading   {#foo}
+
+<ul>
+<li>Headings with the class unnumbered will not be numbered, even if –number-sections is specified. <h1 id="My-heading"><a href="#My-heading" class="headerlink" title="My heading {-}"></a>My heading {-}</h1>  is just the same as<h1 id="My-heading-unnumbered"><a href="#My-heading-unnumbered" class="headerlink" title="My heading {.unnumbered}"></a>My heading {.unnumbered}</h1>Like regular reference links, these references are case-insensitive.</li>
+</ul>
+<p>-Extension: implicit_header_references</p>
+<ul>
+<li>My heading {-}<br>is just the same as</li>
+<li>My heading {.unnumbered}<br>Like regular reference links, these references are case-insensitive.</li>
+</ul>
+<p>Extension: implicit_header_references</p></code></pre><p></p>
+<h3 id="writage是一款word插件">Writage是一款word插件</h3>
+<p><a href="http://www.writage.com/" target="_blank" rel="noopener">下载网址为</a> 支持markdown与word互相转换</p>
+<h2 id="tips-1">tips</h2>
+<h3 id="列出电脑中已安装字体">列出电脑中已安装字体</h3>
+<p>列出所有的中文字体的字体族名，要列出日文和韩文 zh改成 ja或 ko。</p>
+<pre><code>fc-list -f &quot;%{family}\n&quot; :lang=zh &gt; zhfont.txt</code></pre>
+<h3 id="文档内部跳转">文档内部跳转</h3>
+<ol type="1">
+<li><p>先定义一个锚(id)</p>
+<pre><code>&lt;span id=&quot;jump&quot;&gt;Hello World&lt;/span&gt;</code></pre></li>
+<li><p>然后使用markdown的语法:</p>
+<pre><code>[XXXX](#jump)</code></pre></li>
+</ol>
+<h2 id="转换时发现的注意事项">转换时发现的注意事项</h2>
+<h3 id="rst2md">rst2md</h3>
+<h4 id="pandoc不支持的rst部分功能">PANDOC不支持的RST部分功能</h4>
+<h5 id="右下划线不能引用链接inline链接title除外">右下划线不能引用链接inline链接，title除外</h5>
+<p>:</p>
+<pre><code>`Hexo博客从搭建部署到SEO优化等详细教程 &lt;https://www.jianshu.com/p/efaf72aab32e&gt;`_
+
+<p>Hexo博客从搭建部署到SEO优化等详细教程_<br>这样不能引用</p></code></pre><p></p>
+<h3 id="md2slide">md2slide</h3>
+<p>- image引用路径问题</p>
+<blockquote>
+<p>html形式的slide可以正反斜杠都可以,因最后输出到html标识中了，相对路径也可。 beamer形式的pdf slide中需要双反斜杠全路径(windows下)，相对路径不行。</p>
+</blockquote>
+<dl>
+<dt>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</dt>
+<dd><p>同时beamer引用文件时，文件名最好不用中文。有时会引用不到</p>
+</dd>
+</dl>
+<p>======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; 54d7771b54c748ee1d33ed10f51f07f48a33a2e0</p>
+<blockquote>
+<pre><code>![image](H:\\tmp_H\\001.work\\002git\\000GT\\001work\\resource\\image\\layoff.jpeg)</code></pre>
+</blockquote>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD ======= rst2pdf colorlinks ---------------------------------------------------------------------</p>
+<p>- pdf目录颜色是黑色的，改不了蓝色</p>
+<blockquote>
+<p>发现问题在metadata.yaml中，colorlinks没有定义，需要定义成TRUE or FALSE,可以在default.latex中找到代码。</p>
+<pre><code>#请参见default.latex中的逻辑
+#如果colorlinks是TRUE,则表示有link颜色，否则没有
+#有的情况下由klbordercolorlink定义与否决定是否linkborder有颜色。如果测定义     才轮到colorlinks来定义文字颜色。
+colorlinks: TRUE
+toccolor: blue
+#klbordercolorlink: blue</code></pre>
+</blockquote>
+<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 54d7771b54c748ee1d33ed10f51f07f48a33a2e0</p>
+</div><div class="tags"><a href="/tags/自动生成/">自动生成</a><a href="/tags/001install/">001install</a></div><div class="post-nav"><a class="pre" href="/2019/09/26/kl_notes/002memo/001software/001install/make/">make</a><a class="next" href="/2019/09/26/kl_notes/002memo/001software/001install/001.网站/demo-markdown/">demo-markdown</a></div></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/00-00misc/">00-00misc</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-00国学/">00-00国学</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-01古文/">00-01古文</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-02古训/">00-02古训</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-03小说/">00-03小说</a><span class="category-list-count">38</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-04学术/">00-04学术</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-05佛经/">00-05佛经</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-05南师/">00-05南师</a><span class="category-list-count">16</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-06曾国藩/">00-06曾国藩</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-07金圣叹/">00-07金圣叹</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-08钱穆/">00-08钱穆</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-09历史/">00-09历史</a><span class="category-list-count">29</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/00-10英文/">00-10英文</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/000misc/">000misc</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001-make/">001.make</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001-编程/">001.编程</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001-网站/">001.网站</a><span class="category-list-count">10</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001install/">001install</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/001software/">001software</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/002memo/">002memo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/002plan/">002plan</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/002usage/">002usage</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/003post/">003post</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/004book/">004book</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p00其它/">p00其它</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p01散文/">p01散文</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p02读书/">p02读书</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p03旅游/">p03旅游</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p04财经/">p04财经</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p05技术/">p05技术</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p06历史/">p06历史</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p07创投/">p07创投</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p08写作/">p08写作</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/p09work/">p09work</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/welcome/">welcome</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/welcome/hello/">hello</a><span class="category-list-count">1</span></li></ul></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/001software/" style="font-size: 15px;">001software</a> <a href="/tags/hello/" style="font-size: 15px;">hello</a> <a href="/tags/book/" style="font-size: 15px;">book+</a> <a href="/tags/002memo/" style="font-size: 15px;">002memo</a> <a href="/tags/post/" style="font-size: 15px;">post+</a> <a href="/tags/000misc/" style="font-size: 15px;">000misc</a> <a href="/tags/自动生成/" style="font-size: 15px;">自动生成</a> <a href="/tags/002plan/" style="font-size: 15px;">002plan</a> <a href="/tags/001install/" style="font-size: 15px;">001install</a> <a href="/tags/002usage/" style="font-size: 15px;">002usage</a> <a href="/tags/001-编程/" style="font-size: 15px;">001.编程</a> <a href="/tags/001-网站/" style="font-size: 15px;">001.网站</a> <a href="/tags/001-make/" style="font-size: 15px;">001.make</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-09历史/司马光-资治通鉴-23-01-周-原本/">司马光-资治通鉴-23-01-周-原本</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-09历史/柏杨-中国人史纲-6-5/">柏杨-中国人史纲-6-5</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-00misc/叶开-这才是中国最好的语文书-散文分册/">叶开-这才是中国最好的语文书-散文分册</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-09历史/司马光-资治通鉴-23-08-晋2-原本/">司马光-资治通鉴-23-08-晋2-原本</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-01古文/古文观止-白话注释译文-4-1/">古文观止-白话注释译文-4-1</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-07金圣叹/金圣叹-批评水浒传-4-1/">金圣叹-批评水浒传-4-1</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-03小说/明朝那些事儿-7-1/">明朝那些事儿-7-1</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-03小说/明朝那些事儿-7-5/">明朝那些事儿-7-5</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-03小说/王实甫-西厢记-2-1-小说版/">王实甫-西厢记-2-1-小说版</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/18/kl_book/004book/00-00misc/孙绍振-解读经典散文-3-2/">孙绍振-解读经典散文-3-2</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2022 <a href="/." rel="nofollow">⍟曾经走过👣.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/search.js?v=0.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
